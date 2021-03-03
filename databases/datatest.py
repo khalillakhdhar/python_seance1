@@ -6,8 +6,8 @@ passwd="",
 database="sante"
 )
 mycursor = mydb.cursor()
-sql = "INSERT INTO user(nom, adresse) VALUES (%s, %s)"
-val = ("khalil", " Gabés")
+sql = "INSERT INTO `personne`( `nom`, `age`, `etat`) VALUES (%s, %s,%s)"
+val = ("khalil",30, "acceptable")
 mycursor.execute(sql, val)
 mydb.commit()
 print(mycursor.rowcount, "record inserted.")
