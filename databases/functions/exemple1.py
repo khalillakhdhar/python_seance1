@@ -1,4 +1,4 @@
 def callme(name):
-    print("hello"+name)
+    print("hello "+name)
 callme("Ali")
 callme("Mohamed")
