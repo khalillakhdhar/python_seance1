@@ -1,13 +1,13 @@
 #classe principale
 import mysql.connector
-
+mydb = mysql.connector.connect(
+host="localhost",
+user="root", #username par defaut
+passwd="", #password par defaut
+database="productsdb"
+)    
 class produit:
-    mydb = mysql.connector.connect(
-    host="localhost",
-    user="root", #username par defaut
-    passwd="", #password par defaut
-    database="sante"
-    )
+
     def __init__(self,titre,prixu,prixv,quantite):
         self.titre=titre
         self.prixu=prixu
