@@ -40,7 +40,7 @@ class produit:
         val = (self.titre,self.prixu, self.prixv,self.quantite) #paramétres de query
         mycursor.execute(sql, val) #demande d'exécution
         mydb.commit() #verification et validation
-        print(mycursor.rowcount, "record inserted.")
+        print(mycursor.rowcount, "record inserted.") #informer le dev
     def afficher(self):
         mycursor = mydb.cursor()
         mycursor.execute("SELECT * from produit")
