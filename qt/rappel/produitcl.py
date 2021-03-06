@@ -11,7 +11,10 @@ class produit:
     def taxe(self):
         if(self.prixv<100):
             return self.prixv*0.04
-        elif(self.prixv<500)
+        elif(self.prixv<500):
+            return self.prixv*0.09
+        else:
+            return self.prixv*0.12
 
 
 #programme de test
