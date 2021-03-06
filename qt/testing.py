@@ -2,6 +2,7 @@ import sys
 
 from PyQt5.QtWidgets import QApplication, QDialog, QTableWidgetItem,QTextEdit
 from test import * # importation de code de l'interface
+from hello import hello # importation de code de l'interface
 class welcome(QDialog): #(QDialog) permet l'héritage de QDialog
     def __init__(self):
         super().__init__() # applé le constructeur de l'interface
@@ -11,6 +12,8 @@ class welcome(QDialog): #(QDialog) permet l'héritage de QDialog
         self.show()
     def tester(self):
         self.ui.valeur.setText(str(self.ui.nom.toPlainText()))
+        hello.show(QApplication(sys.argv))
+        self.hide()
 
 
 if __name__ == "__main__":
