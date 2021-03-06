@@ -1,5 +1,13 @@
 #classe principale
+import mysql.connector
+
 class produit:
+    mydb = mysql.connector.connect(
+    host="localhost",
+    user="root", #username par defaut
+    passwd="", #password par defaut
+    database="sante"
+    )
     def __init__(self,titre,prixu,prixv,quantite):
         self.titre=titre
         self.prixu=prixu
@@ -26,6 +34,8 @@ class produit:
             self.quantite=int(input("donner la quantité"))
     def detailles(self):
         print("le produit est: %s le prix d'achat est de: %s le prix de vente est %s avec une quantité de stock de: %s"%(self.titre,self.prixu,self.prixv,self.quantite))
+    def add(self):
+
 
 
 #programme de test
