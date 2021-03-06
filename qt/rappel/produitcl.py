@@ -41,6 +41,12 @@ class produit:
         mycursor.execute(sql, val)
         mydb.commit()
         print(mycursor.rowcount, "record inserted.")
+    def afficher(self):
+        mycursor = mydb.cursor()
+        mycursor.execute("SELECT * from produit")
+        myresult = mycursor.fetchall()
+        for x in myresult:
+            print(x)
 
 
 
