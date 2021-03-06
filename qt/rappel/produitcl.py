@@ -18,6 +18,10 @@ class produit:
 
 
 #programme de test
+"""
 pr1=produit("MSI gamer",3700,4100,2)
 chiffre=pr1.gain_brute()
 print("votre chiffre de gain estimé est de : %s"%(chiffre))
+taxes=pr1.taxe()
+print("la taxe unitaire à payer est de %s"%(taxes))
+"""
