@@ -22,8 +22,10 @@ class produit:
             self.prixu=float(input("donner votre prix d'achat"))
         while(self.prixv<1 or self.prixv<self.prixu):
             self.prixv=float(input("donner le prix de vente"))
-        while(quantite<1):
+        while(self.quantite<1):
             self.quantite=int(input("donner la quantité"))
+    def detailles(self):
+        print("le produit est: %s le prix d'achat est de: %s le prix de vente est %s avec une quantité de stock de: %s"%(self.titre,self.prixu,self.prixv,self.quantite))
 
 
 #programme de test
@@ -36,3 +38,4 @@ print("la taxe unitaire à payer est de %s"%(taxes))
 """
 produit1=produit("",0,0,0)
 produit1.read()
+produit1.detailles()
