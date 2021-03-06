@@ -35,6 +35,12 @@ class produit:
     def detailles(self):
         print("le produit est: %s le prix d'achat est de: %s le prix de vente est %s avec une quantité de stock de: %s"%(self.titre,self.prixu,self.prixv,self.quantite))
     def add(self):
+        mycursor = mydb.cursor() 
+        sql = "INSERT INTO `personne`( `nom`, `age`, `etat`) VALUES (%s, %s,%s)"
+        val = (nom,age, etat)
+        mycursor.execute(sql, val)
+        mydb.commit()
+        print(mycursor.rowcount, "record inserted.")
 
 
 
