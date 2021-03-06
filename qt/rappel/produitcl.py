@@ -43,8 +43,8 @@ class produit:
         print(mycursor.rowcount, "record inserted.") #informer le dev
     def afficher(self):
         mycursor = mydb.cursor()
-        mycursor.execute("SELECT * from produit")
-        myresult = mycursor.fetchall()
+        mycursor.execute("SELECT * from produit") #Read query
+        myresult = mycursor.fetchall() #sauvegarde du parcours de mycursor
         for x in myresult:
             print(x)
 
