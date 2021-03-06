@@ -37,7 +37,7 @@ class produit:
     def add(self):
         mycursor = mydb.cursor() #placer le curseur en pointant sur la DB
         sql = "INSERT INTO `produit`( `titre`, `prixu`, `prixv`, `quantite`) VALUES  (%s, %s,%s,%s)" #syntaxe de query
-        val = (self.titre,self.prixu, self.prixv,self.quantite)
+        val = (self.titre,self.prixu, self.prixv,self.quantite) #paramétres de query
         mycursor.execute(sql, val)
         mydb.commit()
         print(mycursor.rowcount, "record inserted.")
