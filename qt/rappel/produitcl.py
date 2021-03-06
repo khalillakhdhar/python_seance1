@@ -36,6 +36,4 @@ print("votre chiffre de gain estimé est de : %s"%(chiffre))
 taxes=pr1.taxe()
 print("la taxe unitaire à payer est de %s"%(taxes))
 """
-produit1=produit("",0,0,0)
-produit1.read()
-produit1.detailles()
+
