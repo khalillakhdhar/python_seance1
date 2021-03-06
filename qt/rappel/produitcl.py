@@ -9,7 +9,10 @@ class produit:
         gain=(self.prixv-self.prixu)*self.quantite
         return gain
     def taxe(self):
-        
+        if(self.prixv<100):
+            return self.prixv*0.04
+        elif(self.prixv<500)
+
 
 #programme de test
 pr1=produit("MSI gamer",3700,4100,2)
