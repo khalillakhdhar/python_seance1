@@ -20,12 +20,18 @@ class IMC(QDialog): #(QDialog) permet l'héritage de QDialog
         else:
             return "surpoids"   
     def affichage(self):
-        poid=float(self.ui.vpoid.toPlainText())
-        taille=float(self.ui.vtaille.toPlainText())
-        valeur=int(self.indicemc(taille,poid))
-        remarque=self.interpretation(taille,poid)
-        print("la valeur de l'indice est %s et vous êtes: %s"%(valeur,remarque))
-        self.ui.indice.setText("la valeur de l'indice est %s et vous êtes: %s"%(valeur,remarque))
+        try:
+            poid=float(self.ui.vpoid.toPlainText())
+            taille=float(self.ui.vtaille.toPlainText())
+            valeur=int(self.indicemc(taille,poid))
+            remarque=self.interpretation(taille,poid)
+            print("la valeur de l'indice est %s et vous êtes: %s"%(valeur,remarque))
+            self.ui.indice.setText("la valeur de l'indice est %s et vous êtes: %s"%(valeur,remarque))
+        except:
+            self.ui.erreur.setText("les champs doivent être numériques")
+
+
+        
 
 
 
