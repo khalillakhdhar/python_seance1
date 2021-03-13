@@ -22,7 +22,7 @@ class IMC(QDialog): #(QDialog) permet l'héritage de QDialog
     def affichage(self):
         poid=float(self.ui.vpoid.toPlainText())
         taille=float(self.ui.vtaille.toPlainText())
-        valeur=self.indicemc(taille,poid)
+        valeur=int(self.indicemc(taille,poid))
         remarque=self.interpretation(taille,poid)
         print("la valeur de l'indice est %s et vous êtes: %s"%(valeur,remarque))
         self.ui.indice.setText("la valeur de l'indice est %s et vous êtes: %s"%(valeur,remarque))
