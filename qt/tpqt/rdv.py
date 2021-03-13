@@ -27,5 +27,5 @@ class rdv:
         mydb.commit()
         print(mycursor.rowcount, "record inserted.")
 
-rd=rdv("25/11/2021","gabes","aucun",30,"personel")
-rd.save()
+#rd=rdv("25/11/2021","gabes","aucun",30,"personel")
+#rd.save()
