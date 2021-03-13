@@ -8,15 +8,15 @@ class welcome(QDialog): #(QDialog) permet l'héritage de QDialog
         self.ui=Ui_Dialog()
         self.ui.setupUi(self)
         self.ui.save.clicked.connect(self.tester)
-        self.ui.save.clicked.connect(self.tester)
+        self.ui.cancel.clicked.connect(self.vider)
         self.show()
     def tester(self):
         print("ok")
     def vider(self):
         print("vider")
-        self.ui.date.setText("")
-        self.ui.duree.setText("")
-        self.ui.description.setText("")
+        self.ui.Date.setText("")
+        self.ui.Duree.setText("")
+        self.ui.Description.setText("")
         self.ui.organisation.setText("")
         self.ui.Lieu.setText("")
 

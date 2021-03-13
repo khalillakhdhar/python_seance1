@@ -43,7 +43,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>250</y>
+     <y>270</y>
      <width>91</width>
      <height>21</height>
     </rect>
@@ -55,8 +55,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>310</y>
+     <x>40</x>
+     <y>350</y>
      <width>61</width>
      <height>20</height>
     </rect>
@@ -76,56 +76,6 @@
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;organisation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="date">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>140</y>
-     <width>256</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="Lieu">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>190</y>
-     <width>256</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="Description">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>240</y>
-     <width>256</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="Duree">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>300</y>
-     <width>256</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="organisation">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>370</y>
-     <width>256</width>
-     <height>81</height>
-    </rect>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
@@ -178,6 +128,56 @@
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="date">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>140</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="Lieu">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="Description">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>250</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="Duree">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>340</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="organisation">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>400</y>
+     <width>251</width>
+     <height>71</height>
+    </rect>
    </property>
   </widget>
  </widget>
