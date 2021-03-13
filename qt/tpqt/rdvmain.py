@@ -12,9 +12,17 @@ class welcome(QDialog): #(QDialog) permet l'héritage de QDialog
         self.show()
     def tester(self):
         print("ok")
+        date=self.ui.date.toPlainText()
+        duree=self.ui.Duree.toPlainText()
+        description=self.ui.Description.toPlainText()
+        organisation=self.ui.organisation.toPlainText()
+        lieu=self.ui.Lieu.toPlainText()
+        if(date==""):
+            self.ui.errreur.setText(" la date est obligatoire!")
+
     def vider(self):
         print("vider")
-        self.ui.Date.setText("")
+        self.ui.date.setText("")
         self.ui.Duree.setText("")
         self.ui.Description.setText("")
         self.ui.organisation.setText("")
