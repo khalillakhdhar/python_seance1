@@ -70,6 +70,6 @@ class Ui_Dialog(object):
         self.label_4.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">Duree</span></p></body></html>"))
         self.label_5.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">organisation</span></p></body></html>"))
         self.label_6.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:16pt; color:#ff0000;\">fiche rdv</span></p></body></html>"))
-        self.save.setText(_translate("Dialog", "PushButton"))
-        self.cancel.setText(_translate("Dialog", "PushButton"))
+        self.save.setText(_translate("Dialog", "save"))
+        self.cancel.setText(_translate("Dialog", "cancel"))
         self.errreur.setText(_translate("Dialog", "TextLabel"))

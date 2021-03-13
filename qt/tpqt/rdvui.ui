@@ -151,7 +151,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>save</string>
    </property>
   </widget>
   <widget class="QPushButton" name="cancel">
@@ -164,7 +164,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>cancel</string>
    </property>
   </widget>
   <widget class="QLabel" name="errreur">
