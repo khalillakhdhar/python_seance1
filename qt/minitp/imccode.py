@@ -10,7 +10,7 @@ class IMC(QDialog): #(QDialog) permet l'héritage de QDialog
         self.ui.btn.clicked.connect(self.affichage)
         self.show()
     def indicemc(self,taille,poids):
-        return taille/ (poids*poids)
+        return poids/ (taille*taille)
     def interpretation(self,t,p):
         imcv=self.indicemc(t,p)
         if(imcv<20):
@@ -20,7 +20,11 @@ class IMC(QDialog): #(QDialog) permet l'héritage de QDialog
         else:
             return "surpoids"   
     def affichage(self):
-        poid=float(self.ui.vpoid)
+        poid=float(self.ui.vpoid.toPlainText())
+        taille=float(self.ui.vtaille.toPlainText())
+        valeur=self.indicemc(taille,poid)
+        remarque=self.interpretation(taille,poid)
+        #print(self.indicemc(taille,poid))
 
 
 
