@@ -58,7 +58,8 @@ class Ui_Dialog(object):
         self.btn.setFont(font)
         self.btn.setObjectName("btn")
         self.erreur = QtWidgets.QLabel(Dialog)
-        self.erreur.setGeometry(QtCore.QRect(360, 270, 91, 31))
+        self.erreur.setGeometry(QtCore.QRect(130, 270, 541, 31))
+        self.erreur.setTextFormat(QtCore.Qt.AutoText)
         self.erreur.setObjectName("erreur")
 
         self.retranslateUi(Dialog)
@@ -74,4 +75,4 @@ class Ui_Dialog(object):
         self.vpoid.setPlaceholderText(_translate("Dialog", "Exemple 80.2"))
         self.vtaille.setPlaceholderText(_translate("Dialog", "exemple 1.70"))
         self.btn.setText(_translate("Dialog", "Calculer"))
-        self.erreur.setText(_translate("Dialog", "<html><head/><body><p><br/></p></body></html>"))
+        self.erreur.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; font-style:italic; color:#ff0000;\"><br/></span></p></body></html>"))
